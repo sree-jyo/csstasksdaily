@@ -1,0 +1,21 @@
+
+.container{
+align-content: center;
+justify-content: center;
+text-align: center;
+color:yellowgreen ;
+font-style: italic
+
+
+}
+.container>h1{
+    color:red;
+    font-style: normal;
+}
+div~h2{
+    color:blue;
+
+}
+div~ul,li,p{
+    color: brown;
+}
