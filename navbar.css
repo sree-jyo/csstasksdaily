@@ -1,0 +1,47 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+.container1{
+    border: 3px solid green;
+    
+}
+.container2{
+    background-color: red;
+    color: aliceblue;
+}
+a{
+    margin-right: 100px;
+}
+
+.container3{
+    width: 100%;
+    padding: 0px;
+    justify-content: space-between;
+    display: flex;
+    background-color: black;
+    color: white;
+
+}
+.log1
+{
+    position:absolute;
+    top: 50%;
+    left: 35%;
+    font-size:60px;
+}
+.bor{
+    width: 20%;
+    position: absolute;
+    top: 60%;
+    left: 42%;
+}
+.log4{
+    position: absolute;
+    top: 0;
+    color: white;
+    font-size: 30px;
+    left: 30px;
+    padding: 15px;
+}
