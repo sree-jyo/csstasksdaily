@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gridtask1</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        .item {
+            padding: 10px;
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+        .container {
+            display: grid;
+            height: 100vh;
+            gap: 10px;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-areas:
+                'a b b c'
+                'a d e f'
+                'a g h f';
+
+
+        }
+
+        .item-item1 {
+            background-color: aqua;
+            grid-area: a;
+        }
+
+        .item-item2 {
+            background-color: pink;
+            grid-area: b;
+        }
+
+        .item-item3 {
+            background-color: brown;
+            grid-area: c;
+        }
+
+        .item-item4 {
+            background-color: blueviolet;
+            grid-area: d;
+        }
+
+        .item-item5 {
+            background-color: royalblue;
+            grid-area: e;
+        }
+
+        .item-item6 {
+            background-color: red;
+            grid-area: f;
+        }
+
+        .item-item7 {
+            background-color: blue;
+            grid-area: g;
+        }
+
+        .item-item8 {
+            background-color: chartreuse;
+            grid-area: h;
+        }
+
+        @media screen and (max width :400px) {
+            .container {
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-areas:
+                    'a'
+                    'b'
+                    'c'
+                    'd'
+                    'e'
+                    'f'
+                    'g'
+                    'h';
+            }
+        }
+
+        h3 {
+            background-color: black;
+            text-align: center;
+            color: white;
+        }
+
+        .container1 {
+            display: grid;
+            height: 100vh;
+            gap: 20px;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-areas:
+                'a a a '
+                'b c c '
+                'b d e'
+                'f  f  f';
+        }
+
+        .itemm {
+            padding: 10px;
+            font-size: 1.5rem;
+            text-align: center;
+           
+        }
+
+        .itemm-header {
+            background-color: blue;
+            grid-area: a;
+            border: 10px solid;
+            
+        }
+
+        .itemm-sidebar {
+            background-color: aqua;
+            grid-area: b;
+            border: 10px solid;
+        }
+
+        .itemm-content-1 {
+            background-color: rebeccapurple;
+            grid-area: c;
+            border: 10px solid;
+        }
+
+        .itemm-content-2 {
+            background-color: red;
+            grid-area: d;
+            border: 10px solid;
+        }
+
+        .itemm-content-3 {
+            background-color: palevioletred;
+            grid-area: e;
+            border: 10px solid;
+        }
+
+        .itemm-footer {
+            background-color: green;
+            grid-area: f;
+            border: 10px solid;
+        }
+
+        @media screen and (max width :400px) {
+            .container1 {
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-areas:
+                    'a'
+                    'b'
+                    'c'
+                    'd'
+                    'e'
+                    'f'
+                ;
+            }
+        }
+
+    
+    
+
+.grid{height: 100vh;gap:10px;display: grid;grid-template-columns:repeat(6,1fr);grid-template-areas:
+        'five one one  one three three'
+        'six one one one four four'
+        'seven nine two two leven twoten'
+        'eight ten two two thten ften' ;}
+    .num{border: 1px solid;display: flex;justify-content: center;align-items: center;}
+        .num1{background: linear-gradient(to left, #f03238, #f0af9d);grid-area: one;}
+        .num2{background: linear-gradient(to right, #a18cd1, #fbc2eb);grid-area: two;}
+        .num3{background: linear-gradient(to right, #84fab0, #8fd3f4);grid-area: three;}
+        .num4{background: linear-gradient(to right, #8fd3f4, #84fab0);grid-area: four;}
+        .num5{background: linear-gradient(to right, #ff9a9e, #fad0c4);grid-area: five;}
+        .num6{background: linear-gradient(to right, #ff9a9e, #fad0c4);grid-area: six;}
+        .num7{background: linear-gradient(to right, #ff9a9e, #fad0c4);grid-area: seven;}
+        .num8{background: linear-gradient(to right, #ff9a9e, #fad0c4);grid-area: eight;}
+        .num9{background: linear-gradient(to right, #ff9a9e, #fad0c4);grid-area: nine;}
+        .num10{background: linear-gradient(to right, #ff9a9e, #fad0c4);grid-area: ten;}
+        .num11{background: linear-gradient(to right, #ff9a9e, #fad0c4);grid-area: leven;}
+        .num12{background: linear-gradient(to right, #ff9a9e, #fad0c4);grid-area: twoten;}
+        .num13{background: linear-gradient(to right, #ff9a9e, #fad0c4);grid-area: thten;}
+        .num14{background: linear-gradient(to right, #ff9a9e, #fad0c4);grid-area: ften;}
+        @media screen and (max-width : 900px){.grid{grid-template-columns: repeat(2,1fr);grid-template-areas: 
+'five one'
+'three six'
+'four seven'
+'nine two '
+'leven twoten'
+'eight ten'
+'thten ften';}}
+
+@media screen and (max-width : 480px){.grid{grid-template-columns: repeat(1,1fr);grid-template-areas: 
+'five'
+'one'
+'three'
+'six'
+'four'
+'seven'
+'nine'
+'two'
+'leven' 
+'twoten'
+'eight'
+'ten'
+'thten'
+'ften';}}
+
+
+    </style>
+</head>
+
+<body>
+    <h3>task1</h3><br>
+    <div class="container">
+        <div class="item-item1">item1</div>
+        <div class="item-item2">item2</div>
+        <div class="item-item3">item3</div>
+        <div class="item-item4">item4</div>
+        <div class="item-item5">item5</div>
+        <div class="item-item6">item6</div>
+        <div class="item-item7">item7</div>
+        <div class="item-item8">item8</div>
+    </div><br>
+    <h3>task2</h3><br><br>
+    <div class="container1">
+        <div class="itemm-header">header</div>
+        <div class="itemm-sidebar">sidebar</div>
+        <div class="itemm-content-1">content-1</div>
+        <div class="itemm-content-2">content-2</div>
+        <div class="itemm-content-3">content-3</div>
+        <div class="itemm-footer">footer</div>
+
+    </div>
+    <br><br>
+    <h3>task3</h3><br>
+    <div class="grid">
+        <div class="num num1">1</div>
+        <div class="num num2">2</div>
+        <div class="num num3">3</div>
+        <div class="num num4">4</div>
+        <div class="num num5">5</div>
+        <div class="num num6">6</div>
+        <div class="num num7">7</div>
+        <div class="num num8">8</div>
+        <div class="num num9">9</div>
+        <div class="num num10">10</div>
+        <div class="num num11">11</div>
+        <div class="num num12">12</div>
+        <div class="num num13">13</div>
+        <div class="num num14">14</div>
+      </div>    
+</body>
+
+</html>
